@@ -22,6 +22,8 @@ I created this application to get a first look at the reactive methodology withi
   - The data collected from the Observable is then functionaly transformed (modified without changing our source) by an <b>Operator</b> or Operators
   - Finally the data is sent to and consumed by the <b>Subscribers</b> (those listening for the data, typically our main thread is one). Again this action of scheduling a thread as a Subscriber and receiving updates on data events is done by the Scheduler.
   - To sum it up , the Observable is created on any thread by a Scheduler to do work, Operator transforms or parses the data, Subscribers consume the data.
+
+![Marble Diagram](https://github.com/ekamp/RxAndroidVideoSearch/blob/master/marblediagram.png "RX Marble Diagram")
 - Advantages
   - Easy decoupling of code.
   - Status/lifecycle reporting on an Observable, such as onNext, onError, onComplete
